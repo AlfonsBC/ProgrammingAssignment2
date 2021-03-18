@@ -42,3 +42,9 @@ cacheSolve <- function(x, ...) {
     x$setinverse_m(cached)
     cached
 }
+
+
+abc <- makeCacheMatrix(matrix(1:4,2,2))
+abc$get()
+abc$getinverse_m()
+cacheSolve(abc)
